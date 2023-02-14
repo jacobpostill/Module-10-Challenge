@@ -39,6 +39,7 @@ function info() {
     .then((response) => {
         console.log(response)
         let generateLogo = new GenerateLogo(response.text, response.textCol, response.shape, response.shapeCol)
+        generateLogo.shapeChoice()
     })
 }
 
