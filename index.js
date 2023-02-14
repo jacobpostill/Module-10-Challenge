@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const  {Square, Triangle, Circle, GenerateLogo} = require('./lib/shapes')
+const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
+inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
+
 
 class logoInfo {
     constructor(text, textCol, shape, shapeCol) {
@@ -32,7 +35,7 @@ function info() {
         },
         {
             type: 'input',
-            message: 'What color would you like the shape to be? (Enter name or hex key)',
+            message: 'What color would you like the shape to be? (Enter name or hex key - include #)',
             name: 'shapeCol'
         }
     ])
