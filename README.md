@@ -10,6 +10,7 @@ In this project you will be able to find a logo generator. This generator allows
 
 <img src="./Example.svg">
 
+
 ## Table of Contents
 
 - [Installation](#installation)
